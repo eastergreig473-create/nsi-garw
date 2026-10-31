@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "created_at_utc": "2026-10-26T07:23:53.886103+00:00",
+  "archives": [
+    {
+      "name": "S1_Code.zip",
+      "bytes": 472870,
+      "sha256": "2ee2bedc9ba7ce8d465b2c7a39b8b0e1295583b335b354556f4abb15e1df0c97",
+      "entries": 114
+    },
+    {
+      "name": "S1_Data_Part01.zip",
+      "bytes": 18548662,
+      "sha256": "61781f05c99d70c6575c33b19f3c75caa785cfead2ba302d50d945886e48b38e",
+      "entries": 3003
+    },
+    {
+      "name": "S1_Data_Part02.zip",
+      "bytes": 18716259,
+      "sha256": "77453dc3e8405cc7e884d787f9ac2ae77a6d1fa3e5c7bc586bd6075d44aba2e4",
+      "entries": 124
+    },
+    {
+      "name": "S1_Data_Part03.zip",
+      "bytes": 17796657,
+      "sha256": "8a0195712809a42057190e0b939e863864b3d982874cecc11bcea8995cb00ef7",
+      "entries": 634
+    },
+    {
+      "name": "S1_Data_Part04.zip",
+      "bytes": 16939383,
+      "sha256": "017d84c6d8ce6fd6cd6fab902abba60c2f01f91682feb81018eca7ea7dd2ebac",
+      "entries": 7
+    },
+    {
+      "name": "S1_Data_Part05.zip",
+      "bytes": 15944381,
+      "sha256": "466fe60397c84c7dcdb34842bd5adc7a47cf10672d8a9b67bfdb3787c940e504",
+      "entries": 16
+    },
+    {
+      "name": "S1_Data_Part06.zip",
+      "bytes": 17178556,
+      "sha256": "5f4a406ac0aead7d57d44faab930b5e686169e77e4a13d59f5903eef8e5bfdb5",
+      "entries": 31
+    }
+  ],
+  "file_index_sha256": "51c8a883d5ac5082b831c4a1c99c47ba022a9b2c654940020a007364dfb2d256",
+  "required_completed_inputs": {
+    "megadepth/analysis_complete.json": "2dafe7292a29dd0c74ba8844ab47a061e117de21fd32f08af666362c2e925a6c",
+    "megadepth/pca_complete.json": "118e391151e94f195bbcaf7fd23d772c1b552e10a8aff637c434e5a36abb7eb6",
+    "learned_texture_nsi/texture_analysis_complete.json": "6ce954fb227d2e4d5554a4b76c5303c6fd136c3be5be69db906dfbf1781f1c38",
+    "eth3d_dense_sensitivity/analysis_complete.json": "85858ccdb5735d200597487a99cfc753a7251c13c5b845d9632bcac6c4e25c0d",
+    "online_runtime/analysis_complete.json": "049b490e6fcc9f5e05e099b5a4b6be37ca7341e702549821085fb3c64c5eab54",
+    "hpatches_complete_associations/analysis_complete.json": "d2d888d72f1071cb7ea076563f518a8b451a5aab2b2f72bad9a7b19b245dbd3d",
+    "eth3d_garw/analysis_complete.json": "f02129462a9f19a2abbd5bd42bb7fa43ff73c9ee96e88a0ed742f28e00871c12",
+    "supporting_measurements/all_complete.json": "b910a5f9a5eddd5c1fb5e5483617d1f941b32d1767174f708a1be8e32e3fbc86",
+    "figures_publication_complete.json": "40f81c7219b1923e1d8480a5592e091c2614ad81d5a4e8e1f1d6c01fe077afe8"
+  },
+  "builder_sha256": "abd465495a46fb9c6120111c3261b77ea33232572fa1c3d55ff1cb67725ee86c",
+  "scope": "Local journal Supporting Information files ready to upload; not a claim of an already public repository or assigned DOI. Originalthirdpartyassetsandfullnativefeaturecaches excluded; compactheldoutmeasurementsincludedforNSIrecalculation."
+}

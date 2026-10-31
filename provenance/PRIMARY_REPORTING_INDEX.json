@@ -1,0 +1,38 @@
+{
+  "scope": "Reporting routes. Each result requires its actual PASS marker; legacy outputs remain for audit and do not replace corrected publication statistics.",
+  "primary_routes": {
+    "HPatches_default_NSI": "results/real/frozen_verification: ten representation JSON files with stable-core verification",
+    "HPatches_layers": "figures/real/fig3_source.csv and its per-row source_json paths",
+    "all_texture_conditions": "results/real/learned_texture_nsi/texture_analysis_complete.json and texture_grid_summary.csv, including missing sequence coverage",
+    "SIFT_seven_operator_matrix": "results/real/sift_degradation_summary.csv; frozen_verification/sift_degradations/all_verified.json",
+    "HPatches_GARW_LoFTR_clean": "results/real/garw_hpatches/loftr_outdoor_coarse_1024/non_oracle/garw_summary.json",
+    "HPatches_GARW_RoMa_clean": "results/real/garw_hpatches/roma_outdoor_scale16_560_cuda_amp/non_oracle/garw_summary.json",
+    "HPatches_GARW_LoFTR_texture": "results/real/garw_hpatches/loftr_outdoor_coarse_1024_texture_s080/non_oracle/garw_summary.json",
+    "HPatches_GARW_RoMa_texture": "results/real/garw_hpatches/roma_outdoor_scale16_560_texture_s080_cuda_amp/non_oracle/garw_summary.json",
+    "HPatches_GARW_multiplicity": "results/real/garw_hpatches/exploratory_multiple_comparisons.csv (BH16)",
+    "selected_penalty_audit": "results/real/garw_hpatches/calibration_parameter_audit.json; actual lambdas0.2,0,0,0.2 for LoFTR-clean,RoMa-clean,LoFTR-texture,RoMa-texture",
+    "full_native_HPatches_matchers": "results/real/native_matchers/native_analysis_complete.json summary rows ONLY; its original association family is superseded",
+    "HPatches_publication_associations": "results/real/hpatches_complete_associations/analysis_complete.json: five methods,three targets,BH15",
+    "ETH3D_publication_associations": "results/real/association_audit/analysis_complete.json ETH3D rows: exact120 permutations,BH10 attempts,undefined constant vectors,no ordinary five-scene correlation CI",
+    "ETH3D_default_NSI": "results/real/eth3d_nsi_summary.csv and its result_json files",
+    "ETH3D_GARW": "results/real/eth3d_garw/per_scene_garw.csv and paired_comparisons.csv (BH8); older association fields in its analysis container are superseded",
+    "ETH3D_posthoc_tolerance": "results/real/eth3d_garw/tolerance_analysis_complete.json: fixed predictions/candidates,not a retuned endpoint",
+    "ranking_sensitivity": "results/real/sensitivity/sensitivity_results.csv and ranking_stability.csv",
+    "extended_ETH3D_ridge": "results/real/eth3d_extended_ridge/extended_ridge_comparison.json: separate exploratory analysis",
+    "threshold_audit": "results/real/threshold_diagnostics/threshold_audit.json: row permutations center C,not a full-NSI/WSH scene test",
+    "MegaDepth_PCA": "results/real/megadepth/pca_complete.json, pca_attribute_correlations.csv and the two PCA NPZ files",
+    "MegaDepth_models_and_stages": "results/real/megadepth/analysis_complete.json:18exports,common scene eligibility,image-slope proxy,not calibrated normals",
+    "paired_annotation_sources": "results/real/eth3d_dense_sensitivity/analysis_complete.json:20fits,10paired contrasts",
+    "online_encoder_runtime": "results/real/online_runtime/analysis_complete.json: matched FP32/AMP encoder candidate pipelines,not native matcher timing",
+    "compact_NSI": "results/real/supporting_measurements/all_complete.json and keyed NPZ/JSON pairs; recompute_compact_nsi.py verifies global/group NSI"
+  },
+  "superseded_or_feasibility_only": [
+    "Older RoMa candidate runs mixing CPU FP32 references and CUDA AMP targets",
+    "SIFT-only and two-native-clean HPatches association adjustments, replaced by BH15",
+    "ETH3D legacy association container using zero-imputed undefined bootstrap draws, replaced by association_audit",
+    "Old fig5_provenance.json for three scatterplots; final figures use per-figure *.provenance.json from gen_fig_revision_extensions.py",
+    "Sparse-SfM ETH3D annotation interpolation: failed coverage,no NSI computed",
+    "Earlier MegaDepth snapshots before real feature extraction; current cohort protocol v2 and feature protocol v5 preserve their freeze timestamps"
+  ],
+  "figure_generation": "The baseline real-source generator precedes gen_fig_revision_extensions.py. Run extensions last; figures require completed scientific markers."
+}

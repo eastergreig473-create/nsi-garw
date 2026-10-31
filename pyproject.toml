@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nsi-garw"
+version = "0.1.0"
+description = "Auditable reconstruction of the NSI and GARW experimental pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pandas>=2.1",
+  "matplotlib>=3.8",
+  "Pillow>=10.0",
+  "psutil>=5.9",
+  "h5py>=3.10",
+  "tomli>=2.0; python_version<'3.11'",
+]
+
+[project.optional-dependencies]
+models = [
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "opencv-contrib-python>=4.9",
+  "kornia>=0.7",
+  "tqdm>=4.66",
+  "einops>=0.7",
+  "loguru>=0.7",
+  "huggingface-hub>=0.22",
+  "safetensors>=0.4",
+  "pycolmap==4.2.1",
+]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+nsi-garw = "nsi_garw.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

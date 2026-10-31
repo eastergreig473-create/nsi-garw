@@ -1,0 +1,6 @@
+# Optional inference dependencies. Install only after selecting the exact model adapters.
+torch>=2.2
+torchvision>=0.17
+opencv-contrib-python>=4.9
+kornia>=0.7
+

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the software version used in your analysis. The associated manuscript has no publication DOI recorded here."
+type: software
+title: "NSI-GARW: geometry-appearance separability diagnostics and reweighting"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/eastergreig473-create/nsi-garw"
+authors:
+  - family-names: Wei
+    given-names: Liansuo
+  - family-names: Xu
+    given-names: Mengmeng
+  - family-names: Shen
+    given-names: Weiwei

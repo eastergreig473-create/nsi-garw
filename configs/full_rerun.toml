@@ -1,0 +1,38 @@
+# Final scientific run plan. Every referenced file must be replaced by a
+# completed, frozen manifest before --execute can start.
+
+[storage]
+# Large immutable assets live on F:. Scientific manifests must record the
+# absolute file paths and SHA-256 values of the completed archives/checkpoints.
+data_root = "F:/NSI_GARW_Data"
+download_root = "F:/NSI_GARW_Data/downloads"
+dataset_root = "F:/NSI_GARW_Data/datasets"
+model_root = "F:/NSI_GARW_Data/models"
+cache_root = "F:/NSI_GARW_Data/cache"
+log_root = "F:/NSI_GARW_Data/logs"
+
+[inputs]
+asset_registry = "manifests/asset_registry.csv"
+nsi_manifest = "manifests/nsi_manifest.csv"
+sensitivity_manifest = "manifests/sensitivity_manifest.csv"
+garw_candidates = "data/garw_candidates.csv"
+matches = "data/matches.csv"
+association = "data/association.csv"
+rank_variants = "data/rank_variants.csv"
+
+[matching]
+primary_method = "GARW"
+baseline_methods = ["LoFTR", "RoMa"]
+thresholds = [1.0, 3.0, 5.0, 10.0]
+symmetric_homography = true
+
+[association]
+x_column = "NSI"
+y_column = "robustness"
+group_column = "scene"
+
+[rank_stability]
+item_column = "model"
+variant_column = "variant"
+score_column = "NSI"
+baseline_variant = "default"
