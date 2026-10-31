@@ -1,0 +1,9 @@
+representation,metric,baseline,estimate,confidence_interval,confidence_level,p_value_wilcoxon,wilcoxon_statistic,group_count,observation_count,bootstrap_replicates,BH_q_8_ETH_GARW_comparisons
+loftr_outdoor_coarse_1024,top1,descriptor_baseline,-0.003515625,"[-0.00859375, -0.000390625]",0.95,0.25,0.0,5,5,10000,1.0
+loftr_outdoor_coarse_1024,top1,fixed_weight,0.0,"[-0.001171875, 0.001171875]",0.95,1.0,1.5,5,5,10000,1.0
+loftr_outdoor_coarse_1024,average_precision,descriptor_baseline,-0.00281794919490232,"[-0.007353122138278401, -5.394345238093996e-05]",0.95,0.25,1.0,5,5,10000,1.0
+loftr_outdoor_coarse_1024,average_precision,fixed_weight,8.275144993896005e-05,"[-0.00045487065018314, 0.00057725694444448]",0.95,0.75,2.0,5,5,10000,1.0
+roma_outdoor_scale16_560,top1,descriptor_baseline,-0.0015625,"[-0.003125, 0.0]",0.95,0.5,0.0,5,5,10000,1.0
+roma_outdoor_scale16_560,top1,fixed_weight,0.0,"[0.0, 0.0]",0.95,1.0,0.0,5,5,10000,1.0
+roma_outdoor_scale16_560,average_precision,descriptor_baseline,-0.00139787946428572,"[-0.00295665922619048, 0.0]",0.95,0.5,0.0,5,5,10000,1.0
+roma_outdoor_scale16_560,average_precision,fixed_weight,-1.516712454212e-05,"[-4.550137362636e-05, 0.0]",0.95,1.0,0.0,5,5,10000,1.0
